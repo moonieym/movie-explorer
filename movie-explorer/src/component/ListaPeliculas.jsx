@@ -1,31 +1,37 @@
-import { useEffect, useState } from "react";
-import { fetchConErrores } from "../utils/api"; // importar función del punto 1
+import { useEffect, useState, useMemo, useCallback } from "react";
+import { fetchConErrores } from "../utils/api";
 
-function ListaPeliculas() {
+function ListaPeliculas({ onSeleccionar }) {
   const [peliculas, setPeliculas] = useState([]);
   const [error, setError] = useState("");
 
   useEffect(() => {
     const cargarDatos = async () => {
       const data = await fetchConErrores("http://localhost:5000/peliculas");
-      if (data.error) {
-        setError(data.error);  // <- Aquí se captura el error
-      } else {
-        setPeliculas(data);
-      }
+      if (data.error) setError(data.error);
+      else setPeliculas(data);
     };
     cargarDatos();
   }, []);
 
-  if (error) return <p>Error: {error}</p>; // <- Aquí se muestra el mensaje al usuario
+  // useCallback: función memoriza para pasar a botones
+  const handleSeleccionar = useCallback((pelicula) => {
+    if (onSeleccionar) onSeleccionar(pelicula);
+  }, [onSeleccionar]);
 
-  return (
-    <ul>
-      {peliculas.map((p) => (
-        <li key={p.id}>{p.titulo}</li>
-      ))}
-    </ul>
-  );
+  // useMemo: memoriza la lista renderizada
+  const listaMemorizada = useMemo(() => {
+    return peliculas.map((p) => (
+      <li key={p.id}>
+        {p.titulo} 
+        <button onClick={() => handleSeleccionar(p)}>Seleccionar</button>
+      </li>
+    ));
+  }, [peliculas, handleSeleccionar]); // depende de peliculas y handleSeleccionar
+
+  if (error) return <p>Error: {error}</p>;
+
+  return <ul>{listaMemorizada}</ul>;
 }
 
 export default ListaPeliculas;
