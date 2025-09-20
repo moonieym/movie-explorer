@@ -8,5 +8,15 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@hookform/resolvers": "^5.2.2",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-hook-form": "^7.63.0",
+    "zod": "^4.1.9"
+  },
+  "devDependencies": {
+    "vite": "^7.1.6"
+  }
 }
