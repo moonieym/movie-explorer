@@ -1,28 +1,35 @@
+import { useEffect, useState } from 'react'
 import './App.css'
 
 function App() {
+  const [groups, setGroups] = useState([])
+
+  useEffect(() => {
+    fetch('/api/groups')
+      .then(res => res.json())
+      .then(data => setGroups(data))
+  }, [])
+
   return (
-    <div className="container">
-      <header>
+    <div className="app-wrapper">
+      <header className="app-header">
         <h1>🎬 Movie Explorer</h1>
-        <p>Descubre, busca y guarda tus películas favoritas</p>
+        <p>Explorando el universo K-pop con estilo 💫</p>
       </header>
 
-      <section className="search-box">
-        <input type="text" placeholder="Buscar película..." />
-        <button>Buscar</button>
-      </section>
-
-      <section className="movie-grid">
-        <div className="movie-card">
-          <img src="https://via.placeholder.com/150x220?text=Poster" alt="Poster" />
-          <h3>Título de película</h3>
-          <p>Año • Género</p>
-        </div>
-        {/* Puedes duplicar más <div className="movie-card"> para mostrar resultados */}
-      </section>
+      <main className="group-container">
+        {groups.map(group => (
+          <div key={group.name} className="group-card">
+            <h2>{group.name}</h2>
+            <p><strong>Debut:</strong> {group.debut}</p>
+            <p><strong>Company:</strong> {group.company}</p>
+            <p><strong>Members:</strong> {group.members.join(', ')}</p>
+          </div>
+        ))}
+      </main>
     </div>
   )
 }
 
 export default App
+
