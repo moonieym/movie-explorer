@@ -1,51 +1,81 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #0f0f0f;
+  background-color: #121212;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 .app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   max-width: 1200px;
   margin: auto;
-  padding: 2rem;
+  padding: 0 2rem;
 }
 
-.header {
-  text-align: center;
-  margin-bottom: 2rem;
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1000;
+  border-bottom: 1px solid #333;
 }
 
-.header h1 {
-  font-size: 3rem;
+.navbar h1 {
   color: #ff3c00;
+  font-size: 1.8rem;
 }
 
-.header p {
-  font-size: 1.2rem;
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
   color: #ccc;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ff9f00;
 }
 
 .hero {
   background: linear-gradient(to right, #ff3c00, #ff9f00);
   color: #000;
-  padding: 2rem;
-  border-radius: 12px;
   text-align: center;
-  margin-bottom: 2rem;
-  width: 100%;
+  padding: 4rem 2rem;
+  border-radius: 0 0 20px 20px;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: auto;
 }
 
 .hero h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 
 .hero p {
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+
+.group-section {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.group-section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 .group-grid {
@@ -53,16 +83,16 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  width: 100%;
 }
 
 .group-card {
-  background-color: #1c1c1c;
+  background-color: #1e1e1e;
   padding: 1.5rem;
-  border-radius: 10px;
+  border-radius: 12px;
   width: 280px;
-  box-shadow: 0 0 15px rgba(255, 60, 0, 0.2);
+  box-shadow: 0 0 10px rgba(255, 60, 0, 0.2);
   transition: transform 0.3s ease;
+  text-align: left;
 }
 
 .group-card:hover {
@@ -80,11 +110,30 @@ body {
   margin: 0.3rem 0;
 }
 
+.about {
+  padding: 2rem;
+  text-align: center;
+  background-color: #181818;
+  border-radius: 12px;
+  margin: 2rem;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1rem;
+  color: #ccc;
+  max-width: 700px;
+  margin: auto;
+}
+
 .footer {
-  margin-top: 3rem;
   text-align: center;
   font-size: 0.9rem;
   color: #888;
+  padding: 2rem 0;
+  border-top: 1px solid #333;
 }
-
-
