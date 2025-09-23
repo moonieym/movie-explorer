@@ -8,6 +8,17 @@ function App() {
     fetch('/api/groups')
       .then(res => res.json())
       .then(data => setGroups(data))
+    
+    const handleScroll = () => {
+      const nav = document.querySelector('.navbar')
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled')
+      } else {
+        nav.classList.remove('scrolled')
+      }
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
