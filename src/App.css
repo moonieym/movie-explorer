@@ -17,6 +17,9 @@ html, body {
   max-width: 1400px;
   margin: auto;
   padding: 0;
+  background: #0d0d0d;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
 }
 
 .subtitle {
@@ -153,7 +156,7 @@ html, body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 2rem;
 }
 
 .about {

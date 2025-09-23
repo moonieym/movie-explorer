@@ -30,6 +30,7 @@ function App() {
           <ul>
             <li><a href="#home">Inicio</a></li>
             <li><a href="#groups">Grupos</a></li>
+            <li><a href="#movies">Peliculas</a></li>
             <li><a href="#about">Sobre</a></li>
           </ul>
         </div>
