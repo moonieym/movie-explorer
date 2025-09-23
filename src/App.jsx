@@ -12,8 +12,11 @@ function App() {
 
   return (
     <div className="app">
+      {/* ✅ CAMBIO: Título principal conservado */}
       <nav className="navbar">
         <h1>🎬 Movie Explorer</h1>
+        {/* ✅ CAMBIO: Subtítulo temático agregado */}
+        <p className="subtitle">Inspirado en el universo K-pop: ATEEZ Edition</p>
         <ul>
           <li><a href="#home">Inicio</a></li>
           <li><a href="#groups">Grupos</a></li>
@@ -21,18 +24,21 @@ function App() {
         </ul>
       </nav>
 
-      <section id="home" className="hero">
+      {/* ✅ CAMBIO: Hero section con clase adicional para estilo ATEEZ */}
+      <section id="home" className="hero ateez-theme">
         <div className="hero-content">
-          <h2>Explora el universo K-pop</h2>
-          <p>Descubre grupos legendarios, conoce sus miembros y revive sus debuts</p>
+          {/* ✅ CAMBIO: Texto actualizado para reflejar temática K-pop */}
+          <h2>Explora el universo ATEEZ</h2>
+          <p>Conoce sus eras, miembros y momentos épicos</p>
         </div>
       </section>
 
       <section id="groups" className="group-section">
         <h2>Grupos disponibles</h2>
         <div className="group-grid">
+          {/* ✅ CAMBIO: Clase adicional para estilizar cards tipo álbum */}
           {groups.map(group => (
-            <div key={group.name} className="group-card">
+            <div key={group.name} className="group-card ateez-card">
               <h3>{group.name}</h3>
               <p><strong>Debut:</strong> {group.debut}</p>
               <p><strong>Company:</strong> {group.company}</p>
@@ -49,8 +55,9 @@ function App() {
         </p>
       </section>
 
+      {/* ✅ CAMBIO: Footer con guiño temático */}
       <footer className="footer">
-        <p>Hecho con 💜 por Jung • Proyecto Final React</p>
+        <p>Hecho con 💜 por moonieym • Movie Explorer • K-pop meets cinema 🎶🎬</p>
       </footer>
     </div>
   )

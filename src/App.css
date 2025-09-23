@@ -16,6 +16,13 @@ body {
   padding: 0 2rem;
 }
 
+.subtitle {
+  font-size: 1rem;
+  color: #ff9f00;
+  margin-top: -0.5rem;
+  font-style: italic;
+}
+
 .navbar {
   position: sticky;
   top: 0;
@@ -48,10 +55,11 @@ body {
 
 .navbar a:hover {
   color: #ff9f00;
+  text-decoration: underline;
 }
 
 .hero {
-  background: linear-gradient(to right, #ff3c00, #ff9f00);
+  background: linear-gradient(to right, rgba(255,60,0,0.8), rgba(255,159,0,0.8)), url('/images/movie-ateez.jpg') center/cover no-repeat;
   color: #000;
   text-align: center;
   padding: 4rem 2rem;
@@ -92,6 +100,7 @@ body {
 .group-card {
   background-color: #1e1e1e;
   padding: 1.5rem;
+  border: 1px solid #ff3c00;
   border-radius: 12px;
   width: 280px;
   box-shadow: 0 0 10px rgba(255, 60, 0, 0.2);
@@ -140,4 +149,21 @@ body {
   color: #888;
   padding: 2rem 0;
   border-top: 1px solid #333;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content,
+.group-card,
+.about {
+  animation: fadeInUp 0.8s ease forwards;
 }
