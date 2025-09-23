@@ -149,6 +149,13 @@ html, body {
   margin: 0.3rem 0;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
 .about {
   padding: 2rem;
   text-align: center;
@@ -171,6 +178,7 @@ html, body {
 }
 
 .footer {
+  width: 100%;
   text-align: center;
   font-size: 0.9rem;
   color: #888;
