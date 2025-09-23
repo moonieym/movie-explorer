@@ -25,14 +25,15 @@ function App() {
     <div className="app">
       {/* ✅ CAMBIO: Título principal conservado */}
       <nav className="navbar">
-        <h1>🎬 Movie Explorer</h1>
-        {/* ✅ CAMBIO: Subtítulo temático agregado */}
-        <p className="subtitle">Inspirado en el universo K-pop: ATEEZ Edition</p>
-        <ul>
-          <li><a href="#home">Inicio</a></li>
-          <li><a href="#groups">Grupos</a></li>
-          <li><a href="#about">Sobre</a></li>
-        </ul>
+         <div className="navbar-content">
+          <h1>🎬 Movie Explorer</h1>
+            <p className="subtitle">Inspirado en el universo K-pop: ATEEZ Edition</p>
+          <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#groups">Grupos</a></li>
+            <li><a href="#about">Sobre</a></li>
+          </ul>
+        </div>
       </nav>
 
       {/* ✅ CAMBIO: Hero section con clase adicional para estilo ATEEZ */}
