@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 import './App.css' 
 
 function App() { 
-  const [groups, setGroups] = useState([]) 
+  const [groups, setGroups] = useState([]); 
+  const [temaClaro, setTemaClaro] = useState(true);
   
   useEffect(() => { 
     fetch('/api/groups') 
@@ -21,8 +22,12 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll) 
   }, []) 
   
+  const toggleTema = () => {
+    setTemaClaro(prev => !prev);
+  };
+
   return (
-    <div className="app">
+    <div className={`app ${temaClaro ? 'tema-claro' : 'tema-oscuro'}`}>
       <nav className="navbar">
         <div className="navbar-content">
           <h1>🎬 Movie Explorer</h1>
@@ -30,8 +35,22 @@ function App() {
           <ul>
             <li><a href="#home">Inicio</a></li>
             <li><a href="#groups">Grupos</a></li>
+              <ul className="dropdown-menu">
+              <li><a href="#ateez">ATEEZ</a></li>
+              <li><a href="#straykids">Stray Kids</a></li>
+              <li><a href="#bts">BTS</a></li>
+              <li><a href="#txt">TXT</a></li>
+              <li><a href="#enhypen">ENHYPEN</a></li>
+              <li><a href="#xdinaryheroes">Xdinary Heroes</a></li>
+          </ul>
             <li><a href="#movies">Peliculas</a></li>
             <li><a href="#about">Sobre</a></li>
+            <li>
+              <button className="boton-tema" aria-label="cambiar tema" onClick={toggleTema}
+              >
+                {temaClaro ? '☀️' : '🌙'}
+              </button>
+            </li>
           </ul>
         </div>
       </nav>
