@@ -16,6 +16,7 @@ function App() {
   // Guardar tema cada vez que cambia
   useEffect(() => {
     const nuevoTema = temaClaro ? 'tema-claro' : 'tema-oscuro';
+    document.body.className = nuevoTema;
     localStorage.setItem('tema', nuevoTema);
   }, [temaClaro]);
 
@@ -82,7 +83,7 @@ function App() {
               <div className="integrantes-grid">
                 {group.members.map(member => (
                   <div key={member.name} className="item">
-                    <img src={member.image} alt={member.name} />
+                    <img className="conocelos" src={member.image} alt={member.name} />
                     <p>{member.name}</p>
                   </div>
                 ))}

@@ -135,34 +135,6 @@ html, body {
   transform: scale(1.2);
 }
 
-.dropdown {
-  position: relative;
-}
-
-.dropdown-toggle {
-  background: none;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  color: var(--hover);
-}
-
-.dropdown-menu {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: var(--bg);
-  border: 1px solid var(--accent);
-  padding: 0.5rem;
-  list-style: none;
-  display: none;
-  z-index: 1000;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
 /* Hero */
 .hero {
   background: linear-gradient(to right, rgba(255,60,0,0.8), rgba(255,159,0,0.8)), url('/images/movie-ateez.jpg') center/cover no-repeat;
@@ -235,8 +207,8 @@ html, body {
   margin: 0.3rem 0;
 }
 
-/* Circular images */
-.circle-img {
+/* Conocelos images */
+.conocelos-img {
   width: 160px;
   height: 160px;
   object-fit: cover;
@@ -246,7 +218,7 @@ html, body {
   transition: transform 0.3s ease-in-out, border-color 0.3s ease;
 }
 
-.circle-img:hover {
+.conocelos-img:hover {
   transform: scale(1.1);
   border-color: var(--hover);
 }
