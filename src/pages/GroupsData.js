@@ -67,7 +67,7 @@ const GroupsData = [
         { name: 'Jake', image: '/images/ENHYPEN/JAKE.jpeg' },
         { name: 'Sunghoon', image: '/images/ENHYPEN/SUNGHOON.jpeg' },
         { name: 'Sunoo', image: '/images/ENHYPEN/SUNOO.jpeg' },
-        { name: 'Ni-ki', image: '/images/ENHYPEN/NIKI.jpeg' },
+        { name: 'Ni-ki', image: '/images/ENHYPEN/NI-KI.jpeg' },
       ],
     },
     {
