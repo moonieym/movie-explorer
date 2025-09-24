@@ -58,8 +58,8 @@ function App() {
     <div className="container">
       <section id="home" className="hero ateez-theme">
         <div className="hero-content">
-          <h2>Explora el universo ATEEZ</h2>
-            <p>Conoce sus eras, miembros y momentos épicos</p>
+          <h2>Explora el universo del K-POP</h2>
+            <p>Conoce sus grupos, películas, miembros y momentos épicos</p>
         </div>
       </section>
 
@@ -80,7 +80,9 @@ function App() {
       <section id="about" className="about">
         <h2>Sobre el proyecto</h2>
           <p>
-            Este proyecto fue creado como parte del módulo final de React. Utiliza Vite, despliegue en Vercel y una API personalizada con datos de grupos K-pop. Inspirado en el diseño de apps como Rick & Morty y ATEEZ Explorer.
+            Este proyecto fue creado como parte del módulo final de React. Utiliza Vite, despliegue en Vercel y una API personalizada con datos de grupos K-pop. Inspirado en el diseño de apps como Rick & Morty y ATEEZ Explorer. 
+            
+            Movie Explorer es una app creada para celebrar el K-pop como si fuera cine. Inspirada en ATEEZ, BTS, Stray Kids y más, combina diseño visual con estructura narrativa. Desarrollada con React, Vite y desplegada en Vercel.
           </p>
       </section>
     </div>
