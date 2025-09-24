@@ -35,14 +35,17 @@ function App() {
           <ul>
             <li><a href="#home">Inicio</a></li>
             <li><a href="#groups">Grupos</a></li>
+            <li className="dropdown">
+              <button className="dropdown-toggle">Grupos ▾</button>
               <ul className="dropdown-menu">
-              <li><a href="#ateez">ATEEZ</a></li>
-              <li><a href="#straykids">Stray Kids</a></li>
-              <li><a href="#bts">BTS</a></li>
-              <li><a href="#txt">TXT</a></li>
-              <li><a href="#enhypen">ENHYPEN</a></li>
-              <li><a href="#xdinaryheroes">Xdinary Heroes</a></li>
-          </ul>
+                <li><a href="#ateez">ATEEZ</a></li>
+                <li><a href="#straykids">Stray Kids</a></li>
+                <li><a href="#bts">BTS</a></li>
+                <li><a href="#txt">TXT</a></li>
+                <li><a href="#enhypen">ENHYPEN</a></li>
+                <li><a href="#xdinaryheroes">Xdinary Heroes</a></li>
+              </ul>
+            </li>
             <li><a href="#movies">Peliculas</a></li>
             <li><a href="#about">Sobre</a></li>
             <li>

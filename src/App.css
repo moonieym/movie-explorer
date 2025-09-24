@@ -35,7 +35,7 @@ body.tema-oscuro {
 }
 
 html, body {
-  height: 100vh;
+  height: 100%;
   font-family: 'Segoe UI', 'Poppins', sans-serif;
   background-color: var(--bg);
   color: var(--text);
@@ -46,13 +46,14 @@ html, body {
   flex-direction: column;
   justify-content: flex-start; /* Cambia de space-between a flex-start */
   padding-top: 100px;
+  margin: 0;
+  padding: 0;
 }
 
 :target {
   scroll-margin-top: 120px;
 }
 
-/* App container */
 .app {
   display: flex;
   flex-direction: column;
@@ -62,6 +63,13 @@ html, body {
   max-width: 1400px;
   margin: auto;
   padding: 0;
+}
+
+.container {
+  flex: 1;
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 /* Navbar */
