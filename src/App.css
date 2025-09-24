@@ -285,19 +285,26 @@ html, body {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
-.pelicula-info {
+.peliculas-content {
   flex: 2 1 400px;
   color: var(--text);
 }
 
-.pelicula-info h3 {
+.peliculas-content h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--hover);
+}
+
+.peliculas-content h3 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 1.4rem;
   color: var(--hover);
 }
 
-.pelicula-info p {
+.peliculas-content p {
   font-size: 0.95rem;
   line-height: 1.6;
   color: var(--text);
@@ -353,6 +360,7 @@ html, body {
 
 .hero-content,
 .group-card,
+.pelicula-card,
 .about {
   animation: fadeInUp 0.8s ease forwards;
 }
