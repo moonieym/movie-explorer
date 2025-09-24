@@ -77,13 +77,13 @@ function App() {
               <h3>{group.name}</h3>
               <p><strong>Debut:</strong> {group.debut}</p>
               <p><strong>Company:</strong> {group.company}</p>
-              <p><strong>Members:</strong> {group.members.join(', ')}</p>
+              <p><strong>Members:</strong> {group.members.map(m => m.name).join(', ')}</p>
 
               <div className="integrantes-grid">
-                {group.members.map((member, index) => (
-                  <div key={member} className="item">
-                    <img src={group.profilePics[index]} alt={member} />
-                      <p>{member}</p>
+                {group.members.map(member => (
+                  <div key={member.name} className="item">
+                    <img src={member.image} alt={member.name} />
+                    <p>{member.name}</p>
                   </div>
                 ))}
               </div>
