@@ -3,13 +3,7 @@ import {groups } from './pages/GroupsData.js';
 import './App.css' 
 
 function App() { 
-  const [temaClaro, setTemaClaro] = useState(true);
-  const [menuGruposAbierto, setMenuGruposAbierto] = useState(false);
-
-  const toggleMenuGrupos = () => {
-   setMenuGruposAbierto(prev => !prev);
-  };
-
+  const [temaClaro, setTemaClaro] = useState(true)
   
   // Cargar tema desde localStorage al iniciar
   useEffect(() => {
@@ -48,33 +42,10 @@ function App() {
       <nav className="navbar">
         <div className="navbar-content">
           <h1>🎬 Movie Explorer</h1>
-          <p className="subtitle">Inspirado en el universo K-pop: ATEEZ Edition</p>
+          <p className="subtitle">Inspirado en el universo K-pop</p>
             <ul>
           <li><a href="#home">Inicio</a></li>
-          <li className="dropdown"> {/* ← solo uno */}
-            <button
-              className="dropdown-toggle"
-              onClick={toggleMenuGrupos}
-              aria-expanded={menuGruposAbierto}
-              aria-haspopup="true"
-            >
-              Grupos ▾
-            </button>
-            {menuGruposAbierto && (
-              <ul className="dropdown-menu">
-                {groups.map(group => (
-                  <li key={group.name}>
-                    <a
-                      href={`#${group.name.toLowerCase().replace(/\s/g, '')}`}
-                      onClick={() => setMenuGruposAbierto(false)}
-                    >
-                      {group.name}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            )}
-          </li>
+          <li><a href="#groups">Grupos</a></li>
           <li><a href="#movies">Películas</a></li>
           <li><a href="#about">Sobre</a></li>
           <li>
