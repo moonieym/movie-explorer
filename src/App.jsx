@@ -83,7 +83,7 @@ function App() {
               <div className="integrantes-grid">
                 {group.members.map(member => (
                   <div key={member.name} className="item">
-                    <img className="conocelos" src={member.image} alt={member.name} />
+                    <img className="conocelos-img" src={member.image} alt={member.name} />
                     <p>{member.name}</p>
                   </div>
                 ))}
