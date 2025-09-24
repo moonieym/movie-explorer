@@ -4,6 +4,12 @@ import './App.css'
 
 function App() { 
   const [temaClaro, setTemaClaro] = useState(true);
+  const [menuGruposAbierto, setMenuGruposAbierto] = useState(false);
+
+  const toggleMenuGrupos = () => {
+   setMenuGruposAbierto(prev => !prev);
+  };
+
   
   // Cargar tema desde localStorage al iniciar
   useEffect(() => {
@@ -43,26 +49,41 @@ function App() {
         <div className="navbar-content">
           <h1>🎬 Movie Explorer</h1>
           <p className="subtitle">Inspirado en el universo K-pop: ATEEZ Edition</p>
-          <ul>
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#groups">Grupos</a></li>
-            <li className="dropdown">
-              <button className="dropdown-toggle">Grupos ▾</button>
+            <ul>
+          <li><a href="#home">Inicio</a></li>
+          <li className="dropdown"> {/* ← solo uno */}
+            <button
+              className="dropdown-toggle"
+              onClick={toggleMenuGrupos}
+              aria-expanded={menuGruposAbierto}
+              aria-haspopup="true"
+            >
+              Grupos ▾
+            </button>
+            {menuGruposAbierto && (
               <ul className="dropdown-menu">
-                <li><a href="#ateez">ATEEZ</a></li>
-                <li><a href="#straykids">Stray Kids</a></li>
-                <li><a href="#bts">BTS</a></li>
-                <li><a href="#txt">TXT</a></li>
-                <li><a href="#enhypen">ENHYPEN</a></li>
-                <li><a href="#xdinaryheroes">Xdinary Heroes</a></li>
+                {groups.map(group => (
+                  <li key={group.name}>
+                    <a
+                      href={`#${group.name.toLowerCase().replace(/\s/g, '')}`}
+                      onClick={() => setMenuGruposAbierto(false)}
+                    >
+                      {group.name}
+                    </a>
+                  </li>
+                ))}
               </ul>
-            </li>
-            <li><a href="#movies">Peliculas</a></li>
-            <li><a href="#about">Sobre</a></li>
-            <li>
-              <button className="boton-tema" aria-label="cambiar tema" onClick={toggleTema}
-              >
-                {temaClaro ? '☀️' : '🌙'}
+            )}
+          </li>
+          <li><a href="#movies">Películas</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li>
+            <button
+              className="boton-tema"
+              aria-label="cambiar tema"
+              onClick={toggleTema}
+            >
+              {temaClaro ? '☀️' : '🌙'}
               </button>
             </li>
           </ul>
