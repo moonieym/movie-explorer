@@ -162,7 +162,8 @@ html, body {
 
 /* Group section */
 .group-section {
-  padding: 3rem 1rem;
+  padding: 0;
+  margin: 0;
   width: 100%;
   max-width: 1400px;
   background-color: var(--bg);
