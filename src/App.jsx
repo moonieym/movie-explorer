@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react' 
-import {groups } from './pages/GroupsData.js';
+import GroupsData from './pages/GroupsData.js';
 import './App.css' 
 
 function App() { 
@@ -72,8 +72,8 @@ function App() {
       <section id="groups" className="group-section">
         <h2>Grupos disponibles</h2>
         <div className="group-grid">
-          {groups.map(group => (
-            <div key={group.name} className="group-card ateez-card">
+          {GroupsData.map(group => (
+            <div key={group.name} className="group-card">
               <h3>{group.name}</h3>
               <p><strong>Debut:</strong> {group.debut}</p>
               <p><strong>Company:</strong> {group.company}</p>
