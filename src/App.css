@@ -170,6 +170,7 @@ html, body {
   background-color: var(--bg);
   padding-left: 0;
   padding-right: 0;
+  border: 2px dashed red;
 }
 
 .group-content {
@@ -177,6 +178,7 @@ html, body {
   margin: auto;
   background-color: var(--bg);
   width: 100%;
+  border: 2px dashed blue;
 }
 
 .group-section h2 {
@@ -190,6 +192,7 @@ html, body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  border: 2px dashed green;
 }
 
 .group-card {
