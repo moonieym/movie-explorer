@@ -255,6 +255,54 @@ html, body {
   text-align: center;
 }
 
+.pelicula-card.compact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+  background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 20px rgba(255, 60, 0, 0.3);
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pelicula-card.compact:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(255, 60, 0, 0.5);
+}
+
+.pelicula-media {
+  flex: 1 1 300px;
+  max-width: 300px;
+}
+
+.pelicula-video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.pelicula-info {
+  flex: 2 1 400px;
+  color: var(--text);
+}
+
+.pelicula-info h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+  color: var(--hover);
+}
+
+.pelicula-info p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text);
+}
+
 /* About */
 .about {
   padding: 0;

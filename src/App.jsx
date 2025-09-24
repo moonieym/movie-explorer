@@ -102,7 +102,7 @@ function App() {
             <div className="pelicula-media">
               <video controls className="pelicula-video">
                 <source
-                  src="https://dl.dropboxusercontent.com/scl/fi/6hp38145j2ya9xn0ierkp/ATEEZ-WORLD-TOUR-TOWARDS-THE-LIGHT-_-WILL-TO-POWER-IN-CINEMAS-Official-Trailer.mp4"
+                  src="https://dl.dropboxusercontent.com/s/6hp38145j2ya9xn0ierkp/ATEEZ-WORLD-TOUR-TOWARDS-THE-LIGHT-_-WILL-TO-POWER-IN-CINEMAS-Official-Trailer.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -121,7 +121,7 @@ function App() {
             <div className="pelicula-media">
               <video controls className="pelicula-video">
                 <source
-                  src="https://dl.dropboxusercontent.com/scl/fi/4x0jplvrldh2vyjsd2pq4/Stray-Kids-World-Tour-dominATE-LATIN-AMERICA.mp4"
+                  src="https://dl.dropboxusercontent.com/s/4x0jplvrldh2vyjsd2pq4/Stray-Kids-World-Tour-dominATE-LATIN-AMERICA.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -140,7 +140,7 @@ function App() {
             <div className="pelicula-media">
               <video controls className="pelicula-video">
                 <source
-                  src="https://dl.dropboxusercontent.com/scl/fi/edm9euk254qow4368y9su/BTS-MOVIE-WEEKS.mp4"
+                  src="https://dl.dropboxusercontent.com/s/edm9euk254qow4368y9su/BTS-MOVIE-WEEKS.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -159,7 +159,7 @@ function App() {
             <div className="pelicula-media">
               <video controls className="pelicula-video">
                 <source
-                  src="https://dl.dropboxusercontent.com/scl/fi/ksagim5rt4838e98hdjyc/TOMORROW-X-TOGETHER-WORLD-TOUR-ACT-_-SWEET-MIRAGE-Official-Trailer.mp4"
+                  src="https://dl.dropboxusercontent.com/s/ksagim5rt4838e98hdjyc/TOMORROW-X-TOGETHER-WORLD-TOUR-ACT-_-SWEET-MIRAGE-Official-Trailer.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -178,7 +178,7 @@ function App() {
             <div className="pelicula-media">
               <video controls className="pelicula-video">
                 <source
-                  src="https://dl.dropboxusercontent.com/scl/fi/w0tbxhm6j852dtay9h34e/ENHYPEN-Fatal-trouble.mp4"
+                  src="https://dl.dropboxusercontent.com/s/w0tbxhm6j852dtay9h34e/ENHYPEN-Fatal-trouble.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -197,7 +197,7 @@ function App() {
             <div className="pelicula-media">
               <video controls className="pelicula-video">
                 <source
-                  src="https://dl.dropboxusercontent.com/scl/fi/lobo8v438rd4vasfebr6v/Sucker-Punch-Xdinary-Heroes.mp4"
+                  src="https://dl.dropboxusercontent.com/s/lobo8v438rd4vasfebr6v/Sucker-Punch-Xdinary-Heroes.mp4"
                   type="video/mp4"
                 />
               </video>
