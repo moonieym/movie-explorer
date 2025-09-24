@@ -223,6 +223,14 @@ html, body {
   border-color: var(--hover);
 }
 
+.integrantes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+ 
 /* About */
 .about {
   padding: 2rem;
