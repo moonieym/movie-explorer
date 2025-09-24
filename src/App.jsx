@@ -71,16 +71,25 @@ function App() {
 
       <section id="groups" className="group-section">
         <h2>Grupos disponibles</h2>
-          <div className="group-grid">
-            {groups.map(group => (
-              <div key={group.name} className="group-card ateez-card">
-                <h3>{group.name}</h3>
-                <p><strong>Debut:</strong> {group.debut}</p>
-                <p><strong>Company:</strong> {group.company}</p>
-                <p><strong>Members:</strong> {group.members.join(', ')}</p>
+        <div className="group-grid">
+          {groups.map(group => (
+            <div key={group.name} className="group-card ateez-card">
+              <h3>{group.name}</h3>
+              <p><strong>Debut:</strong> {group.debut}</p>
+              <p><strong>Company:</strong> {group.company}</p>
+              <p><strong>Members:</strong> {group.members.join(', ')}</p>
+
+              <div className="integrantes-grid">
+                {group.members.map((member, index) => (
+                  <div key={member} className="item">
+                    <img src={group.profilePics[index]} alt={member} />
+                      <p>{member}</p>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section id="about" className="about">
