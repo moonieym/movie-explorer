@@ -63,6 +63,7 @@ html, body {
   max-width: 1400px;
   margin: auto;
   padding: 0;
+  background-color: var(--bg);
 }
 
 .container {
@@ -267,6 +268,7 @@ html, body {
   padding: 20px;
   border-top: 1px solid #333;
   transition: transform 0.3s, background-color 0.3s;
+  background-color: var(--bg);
 }
 
 /* Animaciones */
