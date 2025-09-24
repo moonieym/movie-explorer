@@ -165,6 +165,8 @@ html, body {
   padding: 3rem 1rem;
   text-align: center;
   width: 100%;
+  background-color: var(--bg);
+  margin-left: calc(-50vw + 50%);
 }
 
 .group-section h2 {
@@ -184,7 +186,8 @@ html, body {
   padding: 1.5rem;
   border: 2px solid var(--accent);
   border-radius: 12px;
-  width: 280px;
+  width: 100%;
+  max-width: 300px;
   box-shadow: 0 0 10px rgba(255, 60, 0, 0.2);
   transition: transform 0.3s ease;
   text-align: left;
