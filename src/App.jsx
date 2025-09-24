@@ -1,30 +1,41 @@
 import { useEffect, useState } from 'react' 
+import {groups } from './pages/GroupsData.js';
 import './App.css' 
 
 function App() { 
-  const [groups, setGroups] = useState([]); 
   const [temaClaro, setTemaClaro] = useState(true);
   
-  useEffect(() => { 
-    fetch('/api/groups') 
-    .then(res => res.json()) 
-    .then(data => setGroups(data)) 
-    
-    const handleScroll = () => { 
-      const nav = document.querySelector('.navbar') 
-      if (window.scrollY > 50) { 
-        nav.classList.add('scrolled') 
-      } else { 
-        nav.classList.remove('scrolled') 
-      } 
-    } 
-    window.addEventListener('scroll', handleScroll) 
-    return () => window.removeEventListener('scroll', handleScroll) 
-  }, []) 
-  
+  // Cargar tema desde localStorage al iniciar
+  useEffect(() => {
+    const temaGuardado = localStorage.getItem('tema');
+    if (temaGuardado === 'tema-oscuro') {
+      setTemaClaro(false);
+    }
+  }, []);
+
+  // Guardar tema cada vez que cambia
+  useEffect(() => {
+    const nuevoTema = temaClaro ? 'tema-claro' : 'tema-oscuro';
+    localStorage.setItem('tema', nuevoTema);
+  }, [temaClaro]);
+
   const toggleTema = () => {
     setTemaClaro(prev => !prev);
   };
+
+  // Scroll dinámico para navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      const nav = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+      } else {
+        nav.classList.remove('scrolled');
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <div className={`app ${temaClaro ? 'tema-claro' : 'tema-oscuro'}`}>
