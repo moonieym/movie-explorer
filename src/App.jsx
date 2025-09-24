@@ -94,56 +94,127 @@ function App() {
           </div>
         </div>
       </section>
-      <section class="peliculas-section" id="peliculas">
-        <div class="peliculas-content">
+
+      <section className="peliculas-section" id="peliculas">
+        <div className="peliculas-content">
           <h2>Películas destacadas</h2>
-          <div class="peliculas-grid">
-            <div class="pelicula-card">
-              <img src="https://www.dropbox.com/scl/fi/6hp38145j2ya9xn0ierkp/ATEEZ-WORLD-TOUR-TOWARDS-THE-LIGHT-_-WILL-TO-POWER-IN-CINEMAS-Official-Trailer.mp4?rlkey=scpzst2nnburc36o7pax1tkmq&st=3dxdyjeg&dl=0" alt="Póster película 1" class="pelicula-img" />
+          <div className="pelicula-card compact">
+            <div className="pelicula-media">
+              <video controls className="pelicula-video">
+                <source
+                  src="https://dl.dropboxusercontent.com/scl/fi/6hp38145j2ya9xn0ierkp/ATEEZ-WORLD-TOUR-TOWARDS-THE-LIGHT-_-WILL-TO-POWER-IN-CINEMAS-Official-Trailer.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div className="pelicula-info">
               <h3>ATEEZ — “Towards the Light: Will to Power”</h3>
-              <p>Una travesía global que fusiona fuerza, arte y propósito. Esta gira mundial de ATEEZ es más que un espectáculo: es una declaración de voluntad, una búsqueda de luz en medio del caos. Cada presentación es una escena cargada de energía, simbolismo y conexión con el público, donde el poder no se impone… se comparte.
-
-              “La luz no se encuentra. Se conquista con voluntad.”</p>
+              <p>
+                Una travesía global que fusiona fuerza, arte y propósito. Esta gira mundial de ATEEZ es más que un espectáculo: es una declaración de voluntad, una búsqueda de luz en medio del caos. Cada presentación es una escena cargada de energía, simbolismo y conexión con el público, donde el poder no se impone… se comparte.
+                <br />
+                <em>“La luz no se encuentra. Se conquista con voluntad.”</em>
+              </p>
             </div>
-            <div class="pelicula-card">
-              <img src="https://www.dropbox.com/scl/fi/4x0jplvrldh2vyjsd2pq4/Stray-Kids-World-Tour-dominATE-LATIN-AMERICA.mp4?rlkey=ij9e7gj6qjn36s4dg9xp7fl3c&st=a1ygxao9&dl=0" alt="Póster película 2" class="pelicula-img" />
+          </div>
+
+          <div className="pelicula-card compact">
+            <div className="pelicula-media">
+              <video controls className="pelicula-video">
+                <source
+                  src="https://dl.dropboxusercontent.com/scl/fi/4x0jplvrldh2vyjsd2pq4/Stray-Kids-World-Tour-dominATE-LATIN-AMERICA.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div className="pelicula-info">
               <h3>Stray Kids — “dominATE”</h3>
-              <p>Una gira mundial que redefine el concepto de poder escénico. “dominATE” es una explosión de energía, identidad y caos controlado, donde Stray Kids transforma cada escenario en un campo de batalla emocional. Con visuales intensos, coreografías brutales y una narrativa que desafía las reglas, esta película-concierto muestra cómo se domina el mundo… sin perder el alma.
-
-              “No venimos a encajar. Venimos a dominar.”</p>
+              <p>
+                Una gira mundial que redefine el concepto de poder escénico. “dominATE” es una explosión de energía, identidad y caos controlado, donde Stray Kids transforma cada escenario en un campo de batalla emocional. Con visuales intensos, coreografías brutales y una narrativa que desafía las reglas, esta película-concierto muestra cómo se domina el mundo… sin perder el alma.
+                <br />
+                <em>“No venimos a encajar. Venimos a dominar.”</em>
+              </p>
             </div>
-            <div class="pelicula-card">
-              <img src="https://www.dropbox.com/scl/fi/edm9euk254qow4368y9su/BTS-MOVIE-WEEKS.mp4?rlkey=umltvt4176w1ufvdkye9cwmuk&st=hmyjii4z&dl=0" alt="Póster filmer 3" class="pelicula-img" />
+          </div>
+
+          <div className="pelicula-card compact">
+            <div className="pelicula-media">
+              <video controls className="pelicula-video">
+                <source
+                  src="https://dl.dropboxusercontent.com/scl/fi/edm9euk254qow4368y9su/BTS-MOVIE-WEEKS.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div className="pelicula-info">
               <h3>BTS — “Movie Weeks”</h3>
-              <p>Una antología emotiva que celebra el recorrido de BTS a través de la música, los recuerdos y los momentos clave de su carrera. Cada “semana” se presenta como un capítulo cinematográfico: desde presentaciones electrizantes hasta reflexiones íntimas, capturando la profundidad emocional y el impacto global del grupo.
-
-              “Cada fotograma cuenta una historia. Cada historia resuena en el mundo.”</p>
+              <p>
+                Una antología emotiva que celebra el recorrido de BTS a través de la música, los recuerdos y los momentos clave de su carrera. Cada “semana” se presenta como un capítulo cinematográfico: desde presentaciones electrizantes hasta reflexiones íntimas, capturando la profundidad emocional y el impacto global del grupo.
+                <br />
+                <em>“Cada fotograma cuenta una historia. Cada historia resuena en el mundo.”</em>
+              </p>
             </div>
-            <div class="pelicula-card">
-              <img src="https://www.dropbox.com/scl/fi/ksagim5rt4838e98hdjyc/TOMORROW-X-TOGETHER-WORLD-TOUR-ACT-_-SWEET-MIRAGE-Official-Trailer.mp4?rlkey=6jue77ax3truze42lv68vec13&st=xmubgbnz&dl=0" alt="Póster filmer 4" class="pelicula-img" />
+          </div>
+
+          <div className="pelicula-card compact">
+            <div className="pelicula-media">
+              <video controls className="pelicula-video">
+                <source
+                  src="https://dl.dropboxusercontent.com/scl/fi/ksagim5rt4838e98hdjyc/TOMORROW-X-TOGETHER-WORLD-TOUR-ACT-_-SWEET-MIRAGE-Official-Trailer.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div className="pelicula-info">
               <h3>TXT — “ACT : SWEET MIRAGE”</h3>
-              <p>Una experiencia sensorial que mezcla fantasía, juventud y emoción pura. “ACT : SWEET MIRAGE” es un viaje onírico donde los escenarios se transforman en espejismos dulces, y cada canción revela un universo oculto. TXT guía al público a través de paisajes emocionales que brillan, se desvanecen y vuelven a surgir como recuerdos imborrables.
-
-              “No todo lo que brilla es un sueño… a veces es un reflejo de lo que somos.”</p>
+              <p>
+                Una experiencia sensorial que mezcla fantasía, juventud y emoción pura. “ACT : SWEET MIRAGE” es un viaje onírico donde los escenarios se transforman en espejismos dulces, y cada canción revela un universo oculto. TXT guía al público a través de paisajes emocionales que brillan, se desvanecen y vuelven a surgir como recuerdos imborrables.
+                <br />
+                <em>“No todo lo que brilla es un sueño… a veces es un reflejo de lo que somos.”</em>
+              </p>
             </div>
-            <div class="pelicula-card">
-              <img src="/images/pelicula5.jpg" alt="Póster filmer 5" class="pelicula-img" />
+          </div>
+
+          <div className="pelicula-card compact">
+            <div className="pelicula-media">
+              <video controls className="pelicula-video">
+                <source
+                  src="https://dl.dropboxusercontent.com/scl/fi/w0tbxhm6j852dtay9h34e/ENHYPEN-Fatal-trouble.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div className="pelicula-info">
               <h3>ENHYPEN — “Memorabilia”</h3>
-              <p>Un viaje emocional a través de recuerdos que marcan, duelen y transforman. “Memorabilia” es una colección de escenas íntimas donde ENHYPEN explora la nostalgia, el crecimiento y los vínculos que persisten en el tiempo. Cada canción es una pieza de memoria que se convierte en legado, envuelta en atmósferas melancólicas y poderosas.
-
-              “Algunos recuerdos no se guardan… se viven una y otra vez.”</p>
+              <p>
+                Un viaje emocional a través de recuerdos que marcan, duelen y transforman. “Memorabilia” es una colección de escenas íntimas donde ENHYPEN explora la nostalgia, el crecimiento y los vínculos que persisten en el tiempo. Cada canción es una pieza de memoria que se convierte en legado, envuelta en atmósferas melancólicas y poderosas.
+                <br />
+                <em>“Algunos recuerdos no se guardan… se viven una y otra vez.”</em>
+              </p>
             </div>
-            <div class="pelicula-card">
-              <img src="/images/pelicula6.jpg" alt="Póster filmer 6" class="pelicula-img" />
-              <h3>Xdinary Heroes — “Sucker Punch!”</h3>
-              <p>Un concierto explosivo que combina rock, rebeldía y narrativa visual. “Sucker Punch!” es una descarga de adrenalina donde Xdinary Heroes transforma cada escenario en un universo alternativo, lleno de riffs intensos, luces dramáticas y emociones crudas. Más que una presentación, es una declaración: el poder del sonido puede golpear más fuerte que cualquier puño.
+          </div>
 
-              “No somos héroes perfectos. Somos los que rompen el silencio.”</p>
+          <div className="pelicula-card compact">
+            <div className="pelicula-media">
+              <video controls className="pelicula-video">
+                <source
+                  src="https://dl.dropboxusercontent.com/scl/fi/lobo8v438rd4vasfebr6v/Sucker-Punch-Xdinary-Heroes.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div className="pelicula-info">
+              <h3>Xdinary Heroes — “Sucker Punch!”</h3>
+              <p>
+                Un concierto explosivo que combina rock, rebeldía y narrativa visual. “Sucker Punch!” es una descarga de adrenalina donde Xdinary Heroes transforma cada escenario en un universo alternativo, lleno de riffs intensos, luces dramáticas y emociones crudas. Más que una presentación, es una declaración: el poder del sonido puede golpear más fuerte que cualquier puño.
+                <br />
+                <em>“No somos héroes perfectos. Somos los que rompen el silencio.”</em>
+              </p>
             </div>
           </div>
         </div>
       </section>
 
+      
       <section id="about" className="about">
         <h2>Sobre el proyecto</h2>
           <p>
