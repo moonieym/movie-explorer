@@ -163,11 +163,13 @@ html, body {
 /* Group section */
 .group-section {
   padding: 3rem 1rem;
-  text-align: center;
   width: 100%;
-  max-width: 1400px;
   background-color: var(--bg);
-  margin-left: calc(-50vw + 50%);
+}
+
+.group-content {
+  max-width: 1400px;
+  margin: auto;
 }
 
 .group-section h2 {
