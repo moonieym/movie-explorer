@@ -75,12 +75,12 @@ const GroupsData = [
       debut: '2021',
       company: 'JYP Entertainment',
       members: [
-        { name: 'Gunil', image: '/images/XDINARY HEROES/GUNIL.jpeg' },
-        { name: 'Jungsu', image: '/images/XDINARY HEROES/JUNGSU.jpeg' },
-        { name: 'Gaon', image: '/images/XDINARY HEROES/GAON.jpeg' },
-        { name: 'O.de', image: '/images/XDINARY HEROES/O DE.jpeg' },
-        { name: 'Jun Han', image: '/images/XDINARY HEROES/JUN HAN.jpeg' },
-        { name: 'Jooyeon', image: '/images/XDINARY HEROES/JOOYEON.jpeg' },
+        { name: 'Gunil', image: '/images/XDINARY/GUNIL.jpeg' },
+        { name: 'Jungsu', image: '/images/XDINARY/JUNGSU.jpeg' },
+        { name: 'Gaon', image: '/images/XDINARY/GAON.jpeg' },
+        { name: 'O.de', image: '/images/XDINARY/O DE.jpeg' },
+        { name: 'Jun Han', image: '/images/XDINARY/JUN HAN.jpeg' },
+        { name: 'Jooyeon', image: '/images/XDINARY/JOOYEON.jpeg' },
       ],
     },
   ];
